@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(3, 138, 138);
+            color: rgb(253, 250, 250);
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudo com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong> DOM </strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div> 
+    <script>
+        var d = window.document.querySelector('div#msg') //toda div selecionada por class . quando for id será #
+        var d = window.document.getElementById('msg')// selecionando div mensagem
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write( 'Está escrito assim: ' + p1.innerText) // pega informação de var p1 e exibe na tela com adicionais
+        p1.style.color = 'orange' // muda cor de texto p1
+        corpo.style.background = 'black' // muda cor de fundo do site
+        document.write(p1.innerHTML) // tras p1 formatado com todas as configurações
+        window.alert(p1.innerHTML) // exibe alerta do texto.
+        d.style.background = 'green' // mudar cor div msg
+        d.innerText = 'Estou aguardando...' // mudando texto div msg
+        window.document.getElementById('msg').innerText = 'Olá!' // muda texto div msg
+        d.style.color ='blue'
+
+        
+
+    </script>
+</body>
+</html>
