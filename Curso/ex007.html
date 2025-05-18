@@ -3,35 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somando Números</title>
+    <title>Somando Números</title> <!--título do site-->
     <style>
         body {
-            font: normal 18pt Arial;
+            font: normal 18pt Arial; /* definindo tamanho de fonte */
         }
         input {
             font: normal 18pt arial;
-            width: 100px;
+            width: 100px; /* definindo tamanho dos campos */
         }
         div#res {
-            margin-top: 20px;
+            margin-top: 2px; /* definindo margem resoltado */
         }
     </style>
 </head>
 <body>
-    <h1> Somando Valores</h1>
-    <input type="number" name="txtn1" id="txtn1"> + 
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="somar" onclick="somar()">
-    <div id="res"> Resultado</div>
+    <h1> Somando Valores</h1> <!--Título-->
+    <input type="number" name="txtn1" id="txtn1"> + <!--Criando input n1 e Id-->
+    <input type="number" name="txtn2" id="txtn2"> <!--Criando input n2id-->
+    <input type="button" value="somar" onclick="somar()"> <!--Criando botão de somar quando clicar-->
+    <div id="res"> Resultado</div> <!--Criando resultado-->
     <script>
         function somar() {
-            var tn1 = window.document.getElementById('txtn1')
-            var tn2 = window.document.querySelector('input#txtn2')
-            var res = window.document.getElementById('res')
-            var n1 = Number(tn1.value)
-            var n2 = Number(tn2.value)
-            var s = n1 + n2
-            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+            var tn1 = window.document.getElementById('txtn1') // Fazendo ligaçãocom txtn1
+            var tn2 = window.document.querySelector('input#txtn2') // Fazendo ligaçãocom txtn2
+            var res = window.document.getElementById('res') // Ligando resultado
+            var n1 = Number(tn1.value) // Adicionando valores de n1
+            var n2 = Number(tn2.value) // Adicionando valores de n2
+            var s = n1 + n2 // Somando
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>` // Exibindo resultado
             
         }
     </script>
