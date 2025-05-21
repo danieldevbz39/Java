@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(67, 151, 116); /* cor de fundo*/
+    font: normal 15pt Arial; /* fonte texto*/
+
+}
+header{
+    color: white; /* cor de retângulo*/
+    text-align: center; /* alinhamento do retângulo*/
+}
+section{
+    background-color: whitesmoke; /* cor texto*/
+    border-radius: 10px; /* cantos do retângulo*/
+    padding: 15px; /* Altura retângulo*/
+    width: 500px; /* Largura retângulo*/
+    margin: auto; /* Alinhamento centro tetântulo*/
+    box-shadow: 5px 5px 10px rgb(105, 105, 105); /*sombra do retângulo*/
+}
+footer{
+    color: white; /*Cor segundo texto*/
+    text-align: center; /*Alinhamento segundo texto*/
+    font-style: italic; /*Estilo de fonte segundo texto*/
+}
