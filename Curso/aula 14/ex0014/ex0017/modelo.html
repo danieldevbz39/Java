@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="estilo.css"> <!--Criando um arquivo externo... segurando ctrl e clicar em estilo, da opção de criar arquivo-->
 </head>
 <body>
     <header>
-        <h1>Título</h1> <!--Primeiro título-->
+        <h1>Tabuada</h1> <!--Primeiro título-->
     </header>
     <section>
         <div>
-            <p>Testando...</p1> <!--Texto dentro da caixa -->
+            <p>Número: <input type="number" name="num" id="txtn">
+            <input type="button" value="Gerar Tabuada" onclick="tabuada()"></p1> <!--Botão vai receber valor com nome gerar tabuada -->
         </div>
         <div>
-            <p>Olá...</p> 
+            <select name="tabuada" id="seltab" size="10">
+                <option><strong>Digite um número acima</strong></option>
+            </select>
         </div>
     </section>
     <footer>
