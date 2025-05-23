@@ -8,18 +8,21 @@
 </head>
 <body>
     <header>
-        <h1>Título</h1> <!--Primeiro título-->
+        <h1>Vamos contar</h1> <!--Primeiro título-->
     </header>
     <section>
-        <div>
-            <p>Testando...</p1> <!--Texto dentro da caixa -->
+        <div id="dados"><!--Definindo id de dados-->
+            <p>Início: <input type="number" name="inicio" id="txti"></p> <!--Criando início e caixa de número -->                
+            <p>Fim: <input type="number" name="fim" id="txtf"></p> <!--Criando fim e caixa de número -->                              
+            <p>Passo: <input type="number" name="passo" id="txtp"></p> <!--Criando passo e caixa de número -->                 
+            <p><input type="button" value="Contar" onclick="contar()"></p>  <!--criando botão contar -->                                
         </div>
-        <div>
-            <p>Olá...</p> 
+        <div id="res"> <!--Definindo id de 'res' resposta-->
+            Preparando a contagem...     
         </div>
     </section>
     <footer>
-        <p>&copy: CursoemVídeo</p>
+        <p>&copy; CursoemVídeo</p>
     </footer>
     <script src="script.js"></script> <!--Criando um arquivo javascript - segurando ctrl e clicar em estilo, da opção de criar arquivo-->
 </body>
