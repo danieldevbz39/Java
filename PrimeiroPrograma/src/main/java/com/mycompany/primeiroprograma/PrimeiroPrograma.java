@@ -1,16 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.primeiroprograma;
 
 /**
  *
  * @author daniel
  */
-public class PrimeiroPrograma {
+public class PrimeiroPrograma { 
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+    public static void main(String[] args) {//psvm+ tab exibe o código
+        System.out.println("Ola Mundo!");
     }
 }
